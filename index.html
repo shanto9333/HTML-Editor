@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/monokai.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+    <span id="moon" class="material-symbols-outlined" onclick="toggleTheme()">brightness_4</span>
+    <span id="fullscreen-toggle" class="fullscreen-button" onclick="toggleFullscreen()">
+        <i class="fas fa-expand"></i>
+    </span>
+</nav>
+<div class="container">
+    <div class="left">
+        <div class="box">
+            <label for=""><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html-code"></textarea>
+        </div>
+
+        <div class="box">
+            <label for=""><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code"></textarea>
+        </div>
+
+        <div class="box">
+            <label for=""><i class="fa-brands fa-js"></i> JavaScript</label>
+            <textarea id="js-code"></textarea>
+        </div>
+    </div>
+    <div class="right">
+        <label for=""><i class="fa-solid fa-play"></i> Output</label>
+        <iframe id="output"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
